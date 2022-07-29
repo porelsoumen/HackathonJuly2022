@@ -8,7 +8,9 @@ import Quality from './Pages/Quality';
 import Developer from './Pages/Developer';
 import Support from './Pages/Support';
 import Home from './Pages/Home';
-import Impala from './Pages/Impala';
+import ImpalaSidebar from './Components/ImpalaSidebar';
+import ImpalaQE from './Pages/ImpalaQE';
+import CoreQE from './Pages/CoreQE';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         <Route path="/developer" element={<Developer />} />
         <Route path="/quality" element={<Quality />} />
         <Route path="/support" element={<Support />} />
-        <Route path="/impalaqe/*" element={<Impala />} />
+        <Route path="/impalaqe/*" element={<ImpalaQE />}/>
+        <Route path="/coreqe/*" element={<CoreQE />}/>
       </Routes>
     </Router>
   );
