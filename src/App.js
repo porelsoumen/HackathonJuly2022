@@ -8,7 +8,6 @@ import Quality from './Pages/Quality';
 import Developer from './Pages/Developer';
 import Support from './Pages/Support';
 import Home from './Pages/Home';
-import ImpalaSidebar from './Components/ImpalaSidebar';
 import ImpalaQE from './Pages/ImpalaQE';
 import CoreQE from './Pages/CoreQE';
 

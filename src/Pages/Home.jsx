@@ -5,14 +5,14 @@ export default function Home() {
 
     return (
         <div style={{ height: '100%', backgroundColor: 'white' }}>
-        <div className="home-container">
+            <div className="home-container">
                 <div className='head'>
-                    <h1>Welcome to Cloudera Onboarding</h1>
+                    <h1 style={{textDecoration: 'underline', marginBottom: '20px'}}>Welcome to <span style={{color: 'orange', fontWeight: 'bold'}}>CLOUDERA</span> Onboarding</h1>
                 </div>
                 <div className='head-desc'>
-                <p>
+                <h2>
                     We are excited to have you onboard. Please choose your learning track below.
-                </p>
+                </h2>
                 </div>
             </div>  
             <div className='card-container home-cards'>

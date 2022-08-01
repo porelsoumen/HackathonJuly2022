@@ -8,6 +8,8 @@ import {
 import URLContent from '../Components/URLContent';
 import Root from './Root';
 import ImageContent from '../Components/ImageContent';
+import {questions} from '../model/impala_quiz'
+import Quiz from './Quiz';
 
 const text = `Everything you need to know before getting started with Cloudera impala-qe repository.`
 const routes = [
@@ -39,6 +41,10 @@ const routes = [
   {
     path: "/gdrive-slides",
     main: () => <URLContent id="slides" src="https://docs.google.com/presentation/d/10adLkGeiGkjWlgXmy2ASHHmxCz91YBZHeFK6g3-5jeA/edit#slide=id.p1" />
+  },
+  {
+    path: "/quiz",
+    main: () => <Quiz name={'ImpalaQE'} questions={questions} />
   }
 ];
 
@@ -72,9 +78,11 @@ export default function impalaQE() {
               <Link to="/impalaqe/gdrive-slides">Gdrive slides</Link>
             </li>
             <li className='sidebar-item'>
-              <Link to="/impalaqe">Top</Link>
+              <Link to="/impalaqe/quiz">Quiz</Link>
             </li>
           </ul>
+          <hr className='divider'/>
+          <Link className='sidebar-item' to="/impalaqe" style={{ marginLeft: '30px'}}>Top</Link>
           </div>
 
         <div className='container'>

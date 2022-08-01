@@ -21,7 +21,6 @@ body{
 
 .container{
   flex-grow: 1;
-  padding: 2em;
   background-color: bisque;
   background-size: cover;
   background-position: center;
@@ -29,6 +28,7 @@ body{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  max-width: 1450px;
 }
 .title{
   font-size: 3em;
@@ -57,7 +57,7 @@ body{
 .sidebar{
   width: 300px;
   flex-shrink: 0;
-  background: "#f0f0f0";
+  background: rgb(245, 214, 214);
   height: 100%;
   overflow: auto;
 }
@@ -167,5 +167,76 @@ body{
   background-color:blanchedalmond;
   justify-content: center;
   text-align: center;
-  margin-left: 400px;
+  margin-left: 450px;
+  font-weight: bold;
+}
+
+.question-card {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 80%; /* Can be in percentage also. */
+  height: auto;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+ul {
+  list-style: none;
+}
+
+.answer {
+  margin-top: 8px;
+  margin-right: 8px;
+  background-color: darkgray;
+  padding: 16px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.question-text {
+  color: darkblue;
+  font-size: 24px;
+}
+
+/* Final Results  */
+
+.final-results {
+  /* Center the div  */
+  margin: 0 auto;
+
+  /* Dimensions  */
+  width: 50%; /* Can be in percentage also. */
+  height: auto;
+  margin-top: 64px;
+
+  /* Visual  */
+  background-color: gray;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.retake {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+
+  border-radius: 24px;
 }

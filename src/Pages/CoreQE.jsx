@@ -8,6 +8,8 @@ import {
 import URLContent from '../Components/URLContent';
 import Root from './Root';
 import ImageContent from '../Components/ImageContent';
+import { questions } from '../model/core_quiz';
+import Quiz from './Quiz';
 
 const text = `This page includes all the prerequisite knowledge about the existing company wide QA systems & infrastructure. You can go through the items in any order but all the items need to be completed.`
 const routes = [
@@ -51,6 +53,10 @@ const routes = [
   {
     path: "/kubernetes",
     main: () => <URLContent id="youtube" src="https://www.youtube.com/embed/s_o8dwzRlu4" />
+  },
+  {
+    path: "/quiz",
+    main: () => <Quiz name={'CoreQE'} questions={questions} />
   }
 ];
 
@@ -92,9 +98,11 @@ export default function CoreQE() {
               <Link to="/coreqe/kubernetes">Kubernetes Tutorial</Link>
             </li>
             <li className='sidebar-item'>
-              <Link to="/coreqe">Top</Link>
+              <Link to="/coreqe/quiz">Quiz</Link>
             </li>
           </ul>
+          <hr className='divider'/>
+          <Link className='sidebar-item' to="/coreqe" style={{ marginLeft: '30px'}}>Top</Link>
           </div>
 
         <div className='container'>
